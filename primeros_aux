@@ -1,0 +1,33 @@
+#app de primeros auxilios
+import random
+
+posibles_caminos = [True, False]
+random.choice(posibles_caminos)
+estimulos = random.choice(posibles_caminos)
+respira = random.choice(posibles_caminos)
+signo_vida = random.choice(posibles_caminos)
+ambulancia = random.choice(posibles_caminos)
+
+print("Bienvenido a S.O.S.App...\
+\n tu app para emergencias....\n")
+
+print("¿La persona responde a estimulos?\n")
+if estimulos:
+    print("valorar la necesidad de llevarlo al hospital más cercano\n")
+else: 
+    print("Abrir la vía Aéria\n")
+
+print("¿La persona respira?\n")
+if respira: 
+    print("Permitele posición de suficiente ventilación\n")
+else:
+    print("Administrar 5 ventilaciones y llamar a la Ambulancia\n")
+    while not ambulancia:
+        print("¿La persona tiene signos vitales?\n")
+        if signo_vida:
+            print("Reevalue la espera de la ambulancia...\n")
+            break
+        else:
+            print("Administrar compresiones torácicas hasta que llegue la ambulancia\n")
+print("Gracias por usar S.O.S.App...\
+\n tu app para emergencias...\n")
