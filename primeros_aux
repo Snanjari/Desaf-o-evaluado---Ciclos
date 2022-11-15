@@ -31,3 +31,4 @@ else:
             print("Administrar compresiones torácicas hasta que llegue la ambulancia\n")
 print("Gracias por usar S.O.S.App...\
 \n tu app para emergencias...\n")
+
